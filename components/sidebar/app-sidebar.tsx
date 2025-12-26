@@ -7,10 +7,14 @@ import {
   User, 
   Home,
   Users,
-  Gift,
   LogOut,
-  Search,
-  Plus
+  Plus,
+  Van,
+  Store,
+  Wallet,
+  Wrench,
+  PocketKnife,
+  LayoutDashboard
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -24,76 +28,46 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-// import { useDispatch } from "react-redux";
-// import { logout } from "@/lib/authSlice";
 import { useRouter } from "next/navigation";
 // import { useAuth } from "@/lib/hook/useAuth";
 
-// Menu items for counselor role (your current items)
-const counselorItems = [
-  {
-    title: "Home",
-    url: "/dashboard",
-    icon: Home,
-  },
-  {
-    title: "User Stories",
-    url: "/user-stories",
-    icon: Users,
-  },
-  {
-    title: "Messages",
-    url: "/messages",
-    icon: MessageCircle,
-  },
-  {
-    title: "Appointment",
-    url: "/appointment",
-    icon: CalendarIcon,
-  },
-  {
-    title: "Earnings",
-    url: "/earnings",
-    icon: Gift,
-  },
-  {
-    title: "Profile",
-    url: "/profile",
-    icon: User,
-  },
-  {
-    title: "Notifications",
-    url: "#",
-    icon: Bell,
-  },
-];
 
 // Menu items for user role (customize this array with the specific items/icons you want for users)
 const userItems = [
   {
-    title: "Search",
-    url: "#",
-    icon: Search,
-  },  
-  {
-    title: "Home",
+    title: "Dashboard",
     url: "/dashboard",
-    icon: Home,
+    icon: LayoutDashboard,
   },  
   {
-    title: "Counncelor",
+    title: "Resturant",
+    url: "#",
+    icon: PocketKnife,
+  },  
+  {
+    title: "Delivery/Logistic",
+    url: "#",
+    icon: Van,
+  },  
+  {
+    title: "Stores",
+    url: "#",
+    icon: Store,
+  },
+  {
+    title: "Quilible Users",
     url: "#",
     icon: Users,
   },
   {
-    title: "Messages", 
-    url: "/messages",
-    icon: MessageCircle,
+    title: "User Management",
+    url: "#",
+    icon: Users,
   },
   {
-    title: "Profile",
-    url: "/profile",
-    icon: User,
+    title: "Wallet System",
+    url: "#",
+    icon: Wallet,
   },
   {
     title: "Notifications",
@@ -101,9 +75,9 @@ const userItems = [
     icon: Bell,
   },
   {
-    title: "Create",
+    title: "Settings",
     url: "#", 
-    icon: Plus,
+    icon: Wrench,
   },
 ];
 

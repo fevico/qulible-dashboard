@@ -1,6 +1,9 @@
 "use client"
+
+import HomeStats from "@/components/dashboard/home/stats";
+
 const Dashboard = () => {
-    return ( <>Hello</> );
+    return ( <><HomeStats/></> );
 }
  
 export default Dashboard;
