@@ -28,8 +28,8 @@ const StatisticsCard: React.FC<StatisticsCardProps> = ({
         </div>
         {trend && (
           <span className={`text-sm font-medium ${
-            trend.startsWith('+') ? 'text-green-600' : 'text-red-600'
-          }`}>
+            trend.startsWith('+') ? 'text-green-600' : 'text-red-600'  
+          }`}>  
             {trend}
           </span>
         )}

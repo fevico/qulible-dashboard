@@ -1,6 +1,7 @@
 import { ChartBarIcon, HeartIcon, ShoppingBagIcon, DollarSign , Banknote , UsersIcon, Motorbike  } from "lucide-react";
 import StatisticsCard from "./card";
 import Promo from "./promo";
+import PayoutRequest from "./payout";
 
 const cardData = [
   {
@@ -55,6 +56,7 @@ const HomeStats = () => {
         <StatisticsCard key={index} title={data.title} value={data.value} icon={data.icon} color={data.color} trend={data.trend} />
             ))}
         </div>
+            <PayoutRequest/>
     </div> );
 }
  
