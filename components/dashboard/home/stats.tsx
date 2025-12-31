@@ -2,6 +2,7 @@ import { ChartBarIcon, HeartIcon, ShoppingBagIcon, DollarSign , Banknote , Users
 import StatisticsCard from "./card";
 import Promo from "./promo";
 import PayoutRequest from "./payout";
+import BestSelling from "./best-selling";
 
 const cardData = [
   {
@@ -57,6 +58,7 @@ const HomeStats = () => {
             ))}
         </div>
             <PayoutRequest/>
+            <BestSelling/>
     </div> );
 }
  

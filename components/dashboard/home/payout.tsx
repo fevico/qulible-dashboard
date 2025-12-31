@@ -68,12 +68,12 @@ const PayoutRequest: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container px-6 py-10">
       <div className="rounded-md border">
         <Table>
-          <TableHeader>
+          <TableHeader>   
             <TableRow>
-              <TableHead className="w-[100px]">ID</TableHead>
+              <TableHead className="">ID</TableHead>
               <TableHead>User</TableHead>
               <TableHead className="text-right">Amount</TableHead>
               <TableHead>Status</TableHead>
