@@ -41,7 +41,7 @@ const userItems = [
   },  
   {
     title: "Resturant",
-    url: "#",
+    url: "/resturant",
     icon: PocketKnife,
   },  
   {
