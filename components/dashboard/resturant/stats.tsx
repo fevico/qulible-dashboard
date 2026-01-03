@@ -1,18 +1,20 @@
+"use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import StatisticsCard from "../home/card";
 import { DollarSign, ShoppingBagIcon, UsersIcon } from "lucide-react";
+import ResturantList from "./resturant-list";
 
 const RegisteredData = [
   {
     title: 'Total Resturant',
-    value: '800',
+    value: '800',   
     icon: <DollarSign  className="h-6 w-6" />,
     trend: '+18%',
     color: 'bg-green-500',
-  },
+  },  
   {
     title: 'Active Resturant',
-    value: '2,847',
+    value: '2,847',              
     icon: <UsersIcon className="h-6 w-6" />,
     trend: '+5%',
     color: 'bg-blue-500',
@@ -23,12 +25,13 @@ const RegisteredData = [
     icon: <ShoppingBagIcon className="h-6 w-6" />,
     trend: '-2%',
     color: 'bg-purple-500',
-  },
+  },  
 ];
 
 const ResturantStats = () => {
     return (
-        <div className="flex justify-center p-4"> {/* Reduced padding to p-4; removed min-h-screen to avoid full-height forcing */}
+        <>
+                <div className="flex justify-center p-4"> {/* Reduced padding to p-4; removed min-h-screen to avoid full-height forcing */}
             <Tabs defaultValue="registered" className="w-full max-w-6xl"> {/* Increased max-w to 6xl (96rem/~1536px) for more room on wider screens */}
                 <TabsList className="flex flex-row justify-center gap-4 bg-background border rounded-md p-2">
                     <TabsTrigger 
@@ -65,6 +68,8 @@ const ResturantStats = () => {
                 </TabsContent>
             </Tabs>
         </div>
+            {/* <ResturantList/> */}
+        </>
     );
 };
  
