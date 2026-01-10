@@ -24,6 +24,11 @@
     "react-dom": "19.2.3",
     "tailwind-merge": "^3.4.0"
   },
+  "optionalDependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "react-hook-form": "^7.70.0",
+    "zod": "^3.25.76"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
