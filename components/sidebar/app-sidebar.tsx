@@ -29,8 +29,6 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { useRouter } from "next/navigation";
-// import { useAuth } from "@/lib/hook/useAuth";
-
 
 // Menu items for user role (customize this array with the specific items/icons you want for users)
 const userItems = [
