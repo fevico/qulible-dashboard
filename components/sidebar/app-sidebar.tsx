@@ -91,16 +91,13 @@ export function AppSidebar() {
   const menuItems =  userItems;
 
   return (
-    <Sidebar>
-      <SidebarContent>
+    <Sidebar className="bg-[#132246] text-white border-r border-[#1e293b]">
+      <SidebarContent className="bg-[#152242]">
         <SidebarGroup>
           <SidebarGroupLabel>
             {/* Logo/Top */}
            <div className="p-4 border-b border-gray-200">
-             <Link href="/dashboard" className="text-xl font-bold text-blue-600">
-                 {/* Refined Win */}
-                 <Image src="/logo.png" alt="logo" width={100} height={150} />
-              </Link>
+          
              </div>
           </SidebarGroupLabel>
           <SidebarGroupContent className="mt-5 gap-4">
